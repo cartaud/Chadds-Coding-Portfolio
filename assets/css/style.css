@@ -3,9 +3,9 @@ h1 {
 }
 
 hr {
-    width: 5px;
-    background-color: green;
-    
+    width: 100%;
+    border: none;
+    background-color:rgb(0, 161, 245);
 }
 
 
@@ -13,13 +13,19 @@ hr {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: rgb(41, 124, 3);
+    background-color: rgb(44, 81, 163);
     height: 50px;
     padding: 20px;
 }
 
-.header h1{
-    background-color: chartreuse;
+h1,
+.header a {
+    color:rgb(0, 162, 255);
+    /*color: rgb(127 251 183); */
+}
+
+a:hover {
+    color: rgb(127 251 183);
 }
 
 .header ul {
@@ -30,22 +36,49 @@ hr {
 
 .header a {
     text-decoration:underline;
-    color: black;
 }
 
 .hero{
     height: 150px;
     width: 100%;
-    background-image: url(../images/matrixCode.png);
+    background-image: url(../images/matrixCodeBlue.png);
     background-size: cover;
 }
 
-.aboutMe {
+.contentContainer{
+    padding: 0 10px;
+}
+
+.sectionHeader {
+    width: 20%;
+}
+
+.hr {
+    width: 0.4%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.sectionContent {
+    width: 79%;
+    
+}
+
+.aboutMe,
+.work {
     display: flex;
     margin-top: 30px;
 }
 
-.aboutMe h1{
-    margin-left: 0 15px;
+.sectionHeader h1 {
+    text-align: end;
+    padding-right: 20px;
+}
+
+.sectionContent > * {
+    padding: 5px 20px;
+    
 }
 
