@@ -1,0 +1,51 @@
+h1 {
+    font-size: 40px;
+}
+
+hr {
+    width: 5px;
+    background-color: green;
+    
+}
+
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(41, 124, 3);
+    height: 50px;
+    padding: 20px;
+}
+
+.header h1{
+    background-color: chartreuse;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap:20px; 
+}
+
+.header a {
+    text-decoration:underline;
+    color: black;
+}
+
+.hero{
+    height: 150px;
+    width: 100%;
+    background-image: url(../images/matrixCode.png);
+    background-size: cover;
+}
+
+.aboutMe {
+    display: flex;
+    margin-top: 30px;
+}
+
+.aboutMe h1{
+    margin-left: 0 15px;
+}
+
