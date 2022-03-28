@@ -25,7 +25,7 @@ h1,
     /*color: rgb(127 251 183); */
 }
 
-a:hover {
+.header a:hover {
     color: rgb(127 251 183);
 }
 
@@ -89,12 +89,33 @@ a:hover {
     width: 45%;
     border: 2px solid rgba(255, 51, 211, 1);
     transition: all 0.5s ease-in-out;
+    filter: blur(0.7px);
 }
 
 .img1:hover {
     box-shadow:  0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    filter: blur(0px);
+    
 }
 
 .sectionContent a{
     text-decoration: none;
+}
+
+.imgTitle {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+    width: 9%;
+    background-color: rgba(255, 51, 211, 1);
+}
+
+.imgTitle > * {
+    color: rgb(0, 57, 179)
+}
+
+.contactInfo {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
