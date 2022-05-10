@@ -74,10 +74,10 @@ h1,
     
 }
 
-.aboutMe,
-.work,
-.contactMe,
-.resume {
+#aboutMe,
+#work,
+#contactMe,
+#resume {
     display: flex;
     margin-top: 30px;
 }
@@ -167,4 +167,38 @@ h1,
     display: flex;
     justify-content: space-between;
     margin: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionHeader {
+        width: 30%;
+    }
+    .sectionHeader h1 {
+        text-align: center;
+    }
+    .sectionContent {
+        padding: 0;
+    }
+    .hr {
+        width: 70%;
+        margin: 10px;
+        height: 3px;
+    }
+    
+    .imgStyleTwo {
+        margin: 5px 0 0 0 ;
+    }
+
+    #workContent {
+        margin-bottom: -40px;
+    }
 }
