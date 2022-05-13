@@ -18,7 +18,7 @@ hr {
     align-items: center;
     background-color: rgb(44, 81, 163);
     height: 50px;
-    padding: 20px;
+    padding: 30px;
 }
 
 h1,
@@ -180,7 +180,7 @@ h1,
         align-items: center;
     }
     .sectionHeader {
-        width: 30%;
+        width: 50%;
     }
     .sectionHeader h1 {
         text-align: center;
