@@ -9,14 +9,18 @@ h3 {
 hr {
     width: 100%;
     border: none;
-    background-color:rgb(44, 81, 163);
+    background-color:rgb(0, 162, 255);
+}
+
+p {
+    font-size: 18px;
 }
 
 .header {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: rgb(44, 81, 163);
+    background-color: rgb(44, 62, 104);
     height: 50px;
     padding: 30px;
 }
@@ -27,7 +31,7 @@ h1,
     
 }
 
-.header a:hover {
+a:hover {
     color: rgb(127 251 183);
 }
 
@@ -42,19 +46,15 @@ h1,
 }
 
 .hero{
-    height: 150px;
+    height: 200px;
     width: 100%;
     background-image: url(../images/matrixCodeBlue.png);
     background-size: cover;
 }
 
-.sectionHeader > h1 {
-    color: rgb(44, 81, 163);
-}
-
 .contentContainer{
     padding: 10px;
-    background-color: blanchedalmond;
+    background-color: rgb(44 62 104);;
 }
 
 .sectionHeader {
@@ -67,11 +67,11 @@ h1,
     overflow: hidden;
     display: flex;
     
+    
 }
 
 .sectionContent {
     width: 79%;
-    
 }
 
 #aboutMe,
@@ -83,14 +83,16 @@ h1,
 }
 
 .sectionHeader h1 {
+    color: rgb(0, 162, 255);
     text-align: end;
     padding-right: 20px;
 }
 
 .sectionContent {
     padding: 5px 20px;
-    
+    color: white;
 }
+
 
 #workContent{
     display: flex;
@@ -125,8 +127,8 @@ h1,
     filter: blur(0px);
 }
 
-.sectionContent div a{
-    text-decoration: none;
+.contactInfo li a{
+    color: white;
 }
 
 .imgTitleOne {
