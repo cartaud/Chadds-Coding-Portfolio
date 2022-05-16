@@ -1,5 +1,6 @@
 h1 {
     font-size: 40px;
+    color:rgb(0, 162, 255);
 }
 
 h3 {
@@ -16,6 +17,11 @@ p {
     font-size: 18px;
 }
 
+a {
+    color:rgb(0, 162, 255);
+    text-decoration:underline;
+}
+
 .header {
     display: flex;
     justify-content:space-between;
@@ -23,12 +29,6 @@ p {
     background-color: rgb(44, 62, 104);
     height: 50px;
     padding: 30px;
-}
-
-h1,
-.header a {
-    color:rgb(0, 162, 255);
-    
 }
 
 a:hover {
@@ -39,10 +39,6 @@ a:hover {
     list-style: none;
     display: flex;
     gap:20px; 
-}
-
-.header a {
-    text-decoration:underline;
 }
 
 .hero{
@@ -66,8 +62,6 @@ a:hover {
     height: auto;
     overflow: hidden;
     display: flex;
-    
-    
 }
 
 .sectionContent {
@@ -118,17 +112,11 @@ a:hover {
 .img {
     width: 100%;
     height: 100%;
-    
-    
 }
 
 .img:hover {
     box-shadow:  0px 0px 8px rgb(0, 161, 245), 0 0 15px rgb(0, 161, 245);
     filter: blur(0px);
-}
-
-.contactInfo li a{
-    color: white;
 }
 
 .imgTitleOne {
@@ -159,16 +147,9 @@ a:hover {
     display: flex;
     justify-content: space-around;
 }
-
-.apart {
+#resume .sectionContent {
     display: flex;
-    justify-content: space-between;
-}
-
-.skills {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px;
+    justify-content: center;
 }
 
 @media screen and (max-width: 992px) {
