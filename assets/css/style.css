@@ -153,6 +153,10 @@ a:hover {
 }
 
 @media screen and (max-width: 992px) {
+    p {
+        font-size: 14px;
+    }
+
     .contentContainer {
         display: flex;
         flex-direction: column;
