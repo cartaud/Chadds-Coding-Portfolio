@@ -1,191 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Raleway:wght@200&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+    display: flex;
+    height: fit-content;
+}
+
 h1 {
-    font-size: 40px;
-    color:rgb(0, 162, 255);
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3vw;
 }
 
 h3 {
-    text-align: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 35px;
 }
 
-hr {
-    width: 100%;
-    border: none;
-    background-color:rgb(0, 162, 255);
-}
-
-p {
-    font-size: 18px;
+li {
+    list-style: none;
+    cursor:pointer;
+    width: fit-content;
 }
 
 a {
-    color:rgb(0, 162, 255);
-    text-decoration:underline;
-}
-
-.header {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: rgb(44, 62, 104);
-    height: 50px;
-    padding: 30px;
-}
-
-a:hover {
-    color: rgb(127 251 183);
-}
-
-.header ul {
-    list-style: none;
-    display: flex;
-    gap:20px; 
-}
-
-.hero{
-    height: 200px;
-    width: 100%;
-    background-image: url(../images/matrixCodeBlue.png);
-    background-size: cover;
-}
-
-.contentContainer{
-    padding: 10px;
-    background-color: rgb(44 62 104);;
-}
-
-.sectionHeader {
-    width: 20%;
-}
-
-.hr {
-    width: 0.4%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-}
-
-.sectionContent {
-    width: 79%;
-}
-
-#aboutMe,
-#work,
-#contactMe,
-#resume {
-    display: flex;
-    margin-top: 30px;
-}
-
-.sectionHeader h1 {
-    color: rgb(0, 162, 255);
-    text-align: end;
-    padding-right: 20px;
-}
-
-.sectionContent {
-    padding: 5px 20px;
+    text-decoration: none;
     color: white;
 }
 
+#left-container {
+    width: 25%;
+    background-color: #202020;
+    padding: 20px 10px;
+}
 
-#workContent{
+#directory-container {
+    margin-top: 50px;
+}
+
+#social-icons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 3%;
-    
+    gap: 5%;
+    margin-top: 2%;
 }
 
-.imgStyleOne {
-    width: 100%;
-    height: 500px;
-    border: 2px solid rgb(44, 81, 163);
+#directory-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 20px;
+}
+
+#right-container {
+    width: 75%;
+    background-color: #252525;
+    padding: 20px 5px;
+}
+
+#bio-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px; 
+}
+
+#portrait-container img{
+    max-width: 100%;
+    max-height:fit-content;
+}
+
+#bio p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+
+.orange {
+    color: #f19b2c
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#projects div {
+    display: flex;
+}
+
+.project-container img{
+    max-width: 90%;
+    max-height:fit-content;
+    border: 2px #f19b2c solid ;
     transition: all 0.5s ease-in-out;
 }
 
-.imgStyleTwo {
-    width: 48.5%;
-    height: 250px;
-    border: 2px solid rgb(44, 81, 163);
-    transition: all 0.5s ease-in-out;
-}
-
-.img {
-    width: 100%;
-    height: 100%;
-}
-
-.img:hover {
-    box-shadow:  0px 0px 8px rgb(0, 161, 245), 0 0 15px rgb(0, 161, 245);
+.project-container img:hover {
+    box-shadow:  0px 0px 8px #f19b2c, 0 0 15px #f19b2c;
     filter: blur(0px);
 }
 
-.imgTitleOne {
-    position: relative;
-    top: -70px;
-    left: 0px;
-    width: 175px;
-    background-color: rgb(44, 81, 163);
-}
-
-.imgTitleTwo {
-    position: relative;
-    top: -70px;
-    left: 0px;
-    width: 100px;
-    
-    background-color: rgb(44, 81, 163);
-}
-
-.imgTitleTwo > *,
-.imgTitleOne > * {
-    color: rgb(0, 161, 245);
-    padding: 2px;
-}
-
-.contactInfo {
-    list-style: none;
+.project-title {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    bottom: 20%;
+    width: fit-content;
+    background-color: #f19b2c;
+    text-decoration: none;
+    color: white;
+    padding: 1% 2%;
 }
-#resume .sectionContent {
+
+#contact-info {
+    margin: 50px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-@media screen and (max-width: 992px) {
-    p {
-        font-size: 14px;
-    }
-
-    .contentContainer {
-        display: flex;
-        flex-direction: column;
-    }
-    .section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .sectionHeader {
-        width: 50%;
-    }
-    .sectionHeader h1 {
-        text-align: center;
-    }
-    .sectionContent {
-        padding: 0;
-    }
-    .hr {
-        width: 70%;
-        margin: 10px;
-        height: 3px;
-    }
-    
-    .imgStyleTwo {
-        margin: 5px 0 0 0 ;
-    }
-
-    #workContent {
-        margin-bottom: -40px;
-    }
+#resume img {
+    max-width: 90%;
+    max-height:fit-content;
+    margin-top: 20px;
 }

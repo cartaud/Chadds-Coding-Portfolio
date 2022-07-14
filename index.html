@@ -2,139 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7f7e12b7b0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Chadd's Portfolio</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Chadd Artaud</h1>
-        <ul class=""header>
-            <a href="#aboutMe"><li>About Me</li></a>
-            <a href="#work"><li>Work</li></a>
-            <a href="#contactMe"><li>Contact Me</li></a>
-            <a href="#resume"><li>Resume</li></a>
-        </ul>
+    <div id="left-container">
+        <header>
+            <h3 class="orange">Chadd Artaud</h3>
+            <div>Full Stack Coding Portfolio</div>
+        </header>
+        <div id="directory-container">
+            <ul>
+                <li class="orange" id="about-link">ABOUT ME</li>
+                <li id="projects-link">PROJECTS</li>
+                <li id="contact-link">CONTACT</li>
+                <li id="resume-link">RESUME</li>
+                <br><br>
+                <p>SOCIAL</p>
+            </ul>
+            <div id="social-icons">
+                <a href="https://www.linkedin.com/in/chadd-artaud/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/cartaud" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/ArtaudChadd" target="_blank"> <i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.facebook.com/chadd.artaud" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/chadd_a33/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            </div>
+            
+        </div>
+
     </div>
-
-    <div class="hero"></div>
-
-    <div class="contentContainer">
-
-        <div id="aboutMe"class="section">
-            <div class="sectionHeader">
-                <h1>About Me</h1>
+    <div id="right-container">
+        <header>
+            <h1 class="orange">MY NAME IS CHADD ARTAUD</h1>
+            <h2>DEDICATED TO WRITING CLEAN CODE</h2>
+        </header>
+        <div id="bio-container">
+            <div id="portrait-container">
+                <img src="./assets/images/profile.png" alt="">
             </div>
-            <div class="hr">
-                <hr>
-            </div>
-            <div class="sectionContent">
+            <div id="bio">
                 <p>
-                    My name is Chadd Artaud and I was born and raised in San Diego, California. I am a 23 year old
+                    My name is Chadd Artaud and I was born and raised in San Diego, California. I am a 24 year old
                     who is beginning his journey into software engineering. My first experience with coding was in my 
                     undergraduate at the University of Nevada, Reno where I earned my Bachelors of Science in Mechanical 
-                    Engineering. I enjoy solving challenging problems as there is no better feeling than finally figuring 
+                    Engineering. I enjoy solving challenging problems as there is no better feeling than solving 
                     a problem that you have been working on for a long period of time. 
                 </p>
-                <br>
+                <br><br>
                 <p>
-                    When I first started learning software development, I was a self learner for about 6 months. Once I had a firm grasp of 
+                    When I first started learning software development, I was a self learner for 6 months. Once I had a firm grasp of 
                     the basics, I decided to take the next step and sign up for a full stack software development bootcamp through University of 
-                    San Diego Extension program. My goal for myself is to be working remotely as a software engineer by the end of this year
-                    where I can continuously learn and improve my software engineering skills!
-                    
+                    San Diego Extension program. My goal for myself is to be working as a software engineer by the end of this year
+                    where I can continuously learn and improve my software engineering skills.
                 </p>
-            </div>
-        </div>
-
-        <div id="work" class="section">
-            <div class="sectionHeader">
-                <h1>Work</h1>
-            </div>
-            <div class="hr">
-                <hr>
-            </div>
-            <div id="workContent" class="sectionContent">
-                <div class="imgStyleOne">
-                    <a href="https://elliottli97.github.io/Crime-Watch/" target="_blank">
-                        <img class="img" src="./assets/images/crimeWatch.png"  alt="neighborhood watch sign">
-                    </a>
-                    <div class="imgTitleOne">
-                        <h2>Crime Watch</h2>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                
-                <div class="imgStyleTwo">
-                    <a href="https://cartaud.github.io/etch-a-sketch/" target="_blank">
-                        <img class="img" src="./assets/images/etch.png"  alt="Etch-A-Sketch">
-                    </a>
-                    <div class="imgTitleTwo">
-                        <h2>Etch-A-Sketch</h2>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="imgStyleTwo">
-                    <a href="https://cartaud.github.io/rock-paper-scissors/" target="_blank">
-                        <img class="img" src="./assets/images/rps.png"  alt="rock paper scissors">
-                    </a>
-                    <div class="imgTitleTwo">
-                        <h2>Rock Paper Scissors</h2>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="imgStyleTwo">
-                    <a href="https://cartaud.github.io/weatherDashboard/" target="_blank">
-                        <img class="img" src="./assets/images/weather.png"  alt="Weather Application">
-                    </a>
-                    <div class="imgTitleTwo">
-                        <h2>Weather Dashboard</h2>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="imgStyleTwo">
-                    <a href="https://cartaud.github.io/workDayScheduler/" target="_blank">
-                        <img class="img" src="./assets/images/toDo.png"  alt="to do list">
-                    </a>
-                    <div class="imgTitleTwo">
-                        <h2>Scheduler</h2>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <br><br><br><br>
-            </div>
-        </div>
-
-        <div id="contactMe" class="section">
-            <div class="sectionHeader">
-                <h1>Contact Me</h1>
-            </div>
-            <div class="hr">
-                <hr>
-            </div>
-            <div class="sectionContent">
-                <ul class="contactInfo">
-                    <li>858.829.3988</li>
-                    <li>chadd_artaud@cox.net</li>
-                    <li><a href="https://github.com/cartaud" target="_blank">Github</a></li>
-                    <li><a href="https://linkedin.com/in/chadd-artaud-66a7a4157" target="_blank">Linkedin</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="resume" class="section">
-            <div class="sectionHeader">
-                <h1>Resume</h1>
-            </div>
-            
-            <div class="hr">
-                <hr>
-            </div>
-            
-            <div class="sectionContent">
-               <p>For more information about myself and my work, please view my resume <a href="./assets/codingResume.pdf" target="_blank">here!</a></p>
             </div>
         </div>
     </div>
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
