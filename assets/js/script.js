@@ -53,7 +53,7 @@ const aboutTemplate = `
     <div id="bio">
         <p>
             My name is Chadd Artaud and I was born and raised in San Diego, California. I am a 24 year old
-            who is beginning his journey into software engineering. My first experience with coding was in my 
+            who is beginning his journey into software engineering. My first experience with coding was as an 
             undergraduate at the University of Nevada, Reno where I earned my Bachelors of Science in Mechanical 
             Engineering. I enjoy solving challenging problems as there is no better feeling than solving 
             a problem that you have been working on for a long period of time. 
@@ -61,7 +61,7 @@ const aboutTemplate = `
         <br><br>
         <p>
             When I first started learning software development, I was a self learner for 6 months. Once I had a firm grasp of 
-            the basics, I decided to take the next step and sign up for a full stack software development bootcamp through University of 
+            the basics, I decided to take the next step and sign up for a full stack software development bootcamp through University of California, 
             San Diego Extension program. My goal for myself is to be working as a software engineer by the end of this year
             where I can continuously learn and improve my software engineering skills.
         </p>
