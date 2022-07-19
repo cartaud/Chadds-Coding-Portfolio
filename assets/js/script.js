@@ -53,7 +53,7 @@ const aboutTemplate = `
     <div id="bio">
         <p>
             My name is Chadd Artaud and I was born and raised in San Diego, California. I am a 24 year old
-            who is beginning his journey into software engineering. My first experience with coding was as an 
+            beginning my journey into software engineering. My first experience with coding was as an 
             undergraduate at the University of Nevada, Reno where I earned my Bachelors of Science in Mechanical 
             Engineering. I enjoy solving challenging problems as there is no better feeling than solving 
             a problem that you have been working on for a long period of time. 
@@ -152,7 +152,7 @@ const resumeTemplate = `
     <h2>CLICK THE IMAGE TO DOWNLOAD PDF</h2>
 </header>
 <div id='resume'>
-    <a href="./assets/codingResume.pdf" target="_blank">
+    <a href="./assets/ChaddArtaudResume.pdf" target="_blank">
         <img src="./assets/images/resumePreview.png" alt="Resume">
     </a>
 </div>
