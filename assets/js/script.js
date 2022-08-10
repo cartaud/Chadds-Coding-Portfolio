@@ -82,10 +82,6 @@ const projectTemplate = `
         <div id="tech-blog" class="project-container">
             <a href="https://github.com/cartaud/mvcTechBlog" target="_blank">
             <img src="./assets/images/techBlog.png"  alt="Tech Blog">
-            <div class="options-container">
-                <div class="top-option hidden">Github</div>
-                <div class="bottom-option">Deployed</div>
-            </div>
             <div class="project-title">
                 <h5>Tech Blog</h5>
                 <h6>MVC</h6>
