@@ -18,6 +18,8 @@ const showProjects = () => {
     resume.classList.remove('orange');
     project.classList.add('orange');
     content.innerHTML = projectTemplate;
+    const techBlog = document.querySelector('#tech-blog')
+    techBlog.addEventListener('mouseover', showOptions)
 };
 
 const showContact = () => {
@@ -68,7 +70,8 @@ const aboutTemplate = `
     </div>
 </div>
 `
-
+//on click of image, send a new template but with image replaced with options
+//to github or deployed
 const projectTemplate = `
 <header>
     <h1 class="orange">MY PROJECTS</h1>
@@ -76,9 +79,13 @@ const projectTemplate = `
 </header>
 <div id="projects">
     <div>
-        <div class="project-container">
+        <div id="tech-blog" class="project-container">
             <a href="https://github.com/cartaud/mvcTechBlog" target="_blank">
             <img src="./assets/images/techBlog.png"  alt="Tech Blog">
+            <div class="options-container">
+                <div class="top-option hidden">Github</div>
+                <div class="bottom-option">Deployed</div>
+            </div>
             <div class="project-title">
                 <h5>Tech Blog</h5>
                 <h6>MVC</h6>
@@ -157,3 +164,13 @@ const resumeTemplate = `
     </a>
 </div>
 `
+
+
+
+
+const showOptions = () => {
+    const techBlog = document.querySelector('#tech-blog')
+    techBlog.classList.remove('hidden')
+    techBlog.classList.add('visible')
+}
+
