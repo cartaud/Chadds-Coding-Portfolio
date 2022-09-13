@@ -54,10 +54,9 @@ const aboutTemplate = `
     </div>
     <div id="bio">
         <p>
-            My name is Chadd Artaud and I was born and raised in San Diego, California. I am a 24 year old
-            beginning my journey into software engineering. My first experience with coding was as an 
-            undergraduate at the University of Nevada, Reno where I earned my Bachelors of Science in Mechanical 
-            Engineering. I enjoy solving challenging problems as there is no better feeling than solving 
+            My name is Chadd Artaud and I was born and raised in San Diego, California. My first experience with 
+            coding was as an undergraduate at the University of Nevada, Reno where I earned my Bachelors of Science
+            in Mechanical Engineering. I enjoy solving complex problems as there is no better feeling than solving 
             a problem that you have been working on for a long period of time. 
         </p>
         <br><br>
@@ -79,47 +78,48 @@ const projectTemplate = `
 </header>
 <div id="projects">
     <div>
+        <div class="project-container">
+            <a href="https://aqueous-spire-68906.herokuapp.com/" target="_blank">
+            <img src="./assets/images/portfolIOPreview.png"  alt="Employee Tracker" class="projectPreview">
+            <div class="project-title">
+                <h5>Portfol.IO</h5>
+                <h6>MERN</h6>
+            </div>
+            </a>
+        </div>
+        <div class="project-container">
+            <a href="https://book-search-engine-x.herokuapp.com/" target="_blank">
+            <img src="./assets/images/bookSearch.png"  alt="Book Search" class="projectPreview">
+            <div class="project-title">
+                <h5>Book Search</h5>
+                <h6>GraphQL</h6>
+            </div>
+            </a>
+        </div>
         <div id="tech-blog" class="project-container">
-            <a href="https://github.com/cartaud/mvcTechBlog" target="_blank">
-            <img src="./assets/images/techBlog.png"  alt="Tech Blog">
+            <a href="https://mvctechchat.herokuapp.com/" target="_blank">
+            <img src="./assets/images/techBlog.png"  alt="Tech Blog" class="projectPreview">
             <div class="project-title">
                 <h5>Tech Blog</h5>
                 <h6>MVC</h6>
             </div>
             </a>
         </div>
-        <div class="project-container">
-            <a href="https://github.com/cartaud/E-CommerceBackEnd" target="_blank">
-            <img src="./assets/images/eCom.png"  alt="E-Commerce">
-            <div class="project-title">
-                <h5>E-Commerce</h5>
-                <h6>ORM</h6>
-            </div>
-            </a>
-        </div>
-        <div class="project-container">
-            <a href="https://github.com/cartaud/expressNoteTaker" target="_blank">
-            <img src="./assets/images/noteTaker.png"  alt="Note Taker">
-            <div class="project-title">
-                <h5>Note Taker</h5>
-                <h6>Express.JS</h6>
-            </div>
-        </div>
     </div>
 
     <div>
         <div class="project-container">
-            <a href="https://github.com/cartaud/employeeTracker" target="_blank">
-            <img src="./assets/images/employeeTracker.png"  alt="Employee Tracker">
+            <a href="https://github.com/cartaud/expressNoteTaker" target="_blank">
+            <img src="./assets/images/noteTaker.png"  alt="Note Taker" class="projectPreview">
             <div class="project-title">
-                <h5>Employee Tracker</h5>
-                <h6>SQL</h6>
+                <h5>Note Taker</h5>
+                <h6>Express.JS</h6>
             </div>
             </a>
         </div>
         <div class="project-container">
             <a href="https://cartaud.github.io/etch-a-sketch/" target="_blank">
-            <img src="./assets/images/etch.png"  alt="Etch-A-Sketch">
+            <img src="./assets/images/etch.png"  alt="Etch-A-Sketch" class="projectPreview">
             <div class="project-title">
                 <h5>Etch-A-Sketch</h5>
                 <h6>Javascript</h6>
@@ -127,11 +127,11 @@ const projectTemplate = `
             </a>
         </div>
         <div class="project-container">
-            <a href="https://github.com/cartaud/vinylMusicShop" target="_blank">
-            <img src="./assets/images/musicStore.png"  alt="Music Store">
+            <a href="https://github.com/cartaud/E-CommerceBackEnd" target="_blank">
+            <img src="./assets/images/eCom.png"  alt="E-Commerce" class="projectPreview">
             <div class="project-title">
-                <h5>Music Store</h5>
-                <h6>Fullstack</h6>
+                <h5>E-Commerce</h5>
+             <h6>ORM</h6>
             </div>
             </a>
         </div>
@@ -155,14 +155,11 @@ const resumeTemplate = `
     <h2>CLICK THE IMAGE TO DOWNLOAD PDF</h2>
 </header>
 <div id='resume'>
-    <a href="./assets/ChaddArtaudResume.pdf" target="_blank">
+    <a href="https://drive.google.com/file/d/1Udy_tTqkliDoq768v7BR0G15tw3QaHBA/view?usp=sharing" target="_blank">
         <img src="./assets/images/resumePreview.png" alt="Resume">
     </a>
 </div>
 `
-
-
-
 
 const showOptions = () => {
     const techBlog = document.querySelector('#tech-blog')
@@ -170,3 +167,4 @@ const showOptions = () => {
     techBlog.classList.add('visible')
 }
 
+showAbout()

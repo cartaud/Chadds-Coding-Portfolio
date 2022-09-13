@@ -23,7 +23,6 @@ h2 {
 }
 
 h3 {
-    font-family: 'Edu VIC WA NT Beginner', cursive;
     font-size: 35px;
 }
 
@@ -91,10 +90,13 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    
+    align-items: center;
 }
 
 #projects div {
     display: flex;
+    
 }
 
 .project-container img{
@@ -102,6 +104,11 @@ a {
     max-height:fit-content;
     border: 2px #f19b2c solid ;
     transition: all 0.5s ease-in-out;
+}
+
+.projectPreview {
+    height: 25vw;
+    width: 25vw;
 }
 
 .project-container img:hover {
@@ -120,6 +127,10 @@ a {
     color: white;
     padding: 1% 2%;
     z-index: 1;
+}
+.project-title h5,
+.project-title h6 {
+    font-size: 1vw;
 }
 
 #contact-info {
