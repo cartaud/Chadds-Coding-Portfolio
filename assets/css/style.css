@@ -43,8 +43,16 @@ a {
     padding: 20px 10px;
 }
 
+#left-container header div {
+    font-size: 1.5vw;
+}
+
 #directory-container {
     margin-top: 50px;
+}
+
+#social-container p {
+    font-size: 2vw;
 }
 
 #social-icons {
@@ -53,11 +61,15 @@ a {
     margin-top: 2%;
 }
 
+.fa-brands {
+    font-size: 1.5vw;
+}
+
 #directory-container ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 #right-container {
@@ -75,11 +87,13 @@ a {
 #portrait-container img{
     max-width: 100%;
     max-height:fit-content;
+    
 }
 
 #bio p {
     font-family: 'Raleway', sans-serif;
-    line-height: 25px;
+    line-height: 1.8vw;
+    font-size: 1.5vw;
 }
 
 .orange {
@@ -201,7 +215,14 @@ a {
     z-index: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
+    #bio p {
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     body {
         flex-direction: column;
     }
@@ -219,11 +240,16 @@ a {
         justify-content:space-between;
         gap: 10px;
         position: fixed;
-        z-index: 0;
     }
 
-    #left-container header {
-        width: 30%;
+    
+
+    #left-container header h2{
+        font-size: 5vw;
+    }
+
+    #left-container header div{
+        font-size: 3vw;
     }
 
     #directory-container {
@@ -232,20 +258,24 @@ a {
         height: fit-content;
     }
 
-    #social-container {
-        width: fit-content;
-        height: fit-content;
+    #directory-container ul li{
+        font-size: 4vw;
     }
 
     #social-container p {
         text-align: center;
+        font-size: 3vw;
     }
 
     #social-icons {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
+        gap: 1vw;
+    }
+
+    .fa-brands {
+        font-size: 3vw;
     }
 
     #right-container {
@@ -268,6 +298,12 @@ a {
         gap: 20px; 
     }
 
+    #bio p {
+        font-size: 4vw;
+        line-height: 4.5vw;
+        padding: 0 2vw;
+    }
+
     #portrait-container {
         display: flex;
         justify-content: center;
@@ -283,10 +319,28 @@ a {
     }
 
     .project-container {
-        height: 30vw;
-        width: 30vw;
+        height: 50vw;
+        width: 50vw;
         border: 2px #f19b2c solid ;
         transition: all 0.5s ease-in-out;
+    }
+
+    .project-container img:hover {
+        box-shadow: none;
+    }
+    
+    .project-title {
+        bottom: 20%;
+        padding: 1% 2%;
+        justify-content: center;
+    }
+    .project-title h5,
+    .project-title h6 {
+        font-size: 3vw;
+    }
+
+    .project-title h6 {
+        font-weight: 400;
     }
 
     .project-description {
@@ -307,4 +361,5 @@ a {
         display: flex;
         justify-content: center;
     }
-  }
+}
+
