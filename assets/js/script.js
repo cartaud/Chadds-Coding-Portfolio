@@ -235,7 +235,7 @@ const noteClick = (x, bool) => {
             </div>
             <div class="project-buttons">
                 <a href="https://github.com/cartaud/expressNoteTaker" class="gitLink" target="_blank">GitHub</a>
-                <a href="https://aqueous-spire-68906.herokuapp.com/" class="deployedLink" target="_blank">Deployed</a>
+                <a href="https://sheltered-journey-28187.herokuapp.com/" class="deployedLink" target="_blank">Deployed</a>
             </div>
         </div>
         `

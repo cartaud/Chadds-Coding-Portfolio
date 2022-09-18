@@ -140,7 +140,6 @@ a {
     text-decoration: none;
     color: white;
     padding: 1% 2%;
-    z-index: 1;
 }
 .project-title h5,
 .project-title h6 {
@@ -212,7 +211,6 @@ a {
     text-decoration: none;
     color: white;
     padding: 1% 2%;
-    z-index: 0;
 }
 
 @media only screen and (max-width: 960px) {
@@ -240,6 +238,7 @@ a {
         justify-content:space-between;
         gap: 10px;
         position: fixed;
+        z-index: 2;
     }
 
     
@@ -333,6 +332,7 @@ a {
         bottom: 20%;
         padding: 1% 2%;
         justify-content: center;
+        z-index: 1;
     }
     .project-title h5,
     .project-title h6 {
