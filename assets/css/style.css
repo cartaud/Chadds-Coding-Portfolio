@@ -106,11 +106,6 @@ a {
     transition: all 0.5s ease-in-out;
 }
 
-.project-container img{
-    max-width: 100%;
-    max-height:fit-content;
-}
-
 .projectPreview {
     width: 100%;
     height: 100%;
@@ -223,6 +218,11 @@ a {
         flex-direction: row;
         justify-content:space-between;
         gap: 10px;
+        position: fixed;
+    }
+
+    #left-container header {
+        width: 30%;
     }
 
     #directory-container {
@@ -249,6 +249,7 @@ a {
 
     #right-container {
         width: 100%;
+        margin-top: 150px;
     }
 
     #right-container header {
@@ -276,8 +277,23 @@ a {
         max-height:fit-content;
     }
 
-    #projects {
-       margin-left: 10px;
+    .projects-row {
+        flex-direction: column;
+    }
+
+    .project-container {
+        height: 30vw;
+        width: 30vw;
+        border: 2px #f19b2c solid ;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .project-description {
+        font-size: 2.5vw;
+    }
+
+    .project-buttons a {
+        font-size: 2vw;
     }
 
     #contact-info {
