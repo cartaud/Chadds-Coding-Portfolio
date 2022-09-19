@@ -4,7 +4,6 @@ Here to showcase some of the projects that I have completed throughout my coding
 view the page <a href="https://cartaud.github.io/Chadds-Coding-Portfolio/" target="_blank">here</a>
 
 preview 
-<img width="400px" src="https://github.com/cartaud/Chadds-Coding-Portfolio/blob/main/assets/images/preview.png?raw=true" alt="page preview">
-
-
-<img width="400px" src="https://github.com/cartaud/Chadds-Coding-Portfolio/blob/main/assets/images/preview2.png?raw=true" alt="page preview">
+![Page Preview One](/assets/images/preview1.png)
+![Page Preview One](/assets/images/preview2.png)
+![Page Preview One](/assets/images/preview3.png)
