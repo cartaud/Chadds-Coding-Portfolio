@@ -67,7 +67,7 @@ const aboutTemplate = `
             When I first started learning software development, I was a self learner for 6 months. Once I had a firm grasp of 
             the basics, I decided to take the next step and sign up for a full stack software development bootcamp through University of California, 
             San Diego Extension program. My goal for myself is to be working as a software engineer by the end of this year
-            where I can continuously learn and improve my software engineering skills.
+            where I can use my knowledge in software engineering to contribute to a company's success.
         </p>
     </div>
 </div>
@@ -77,7 +77,7 @@ const aboutTemplate = `
 const projectTemplate = `
 <header>
     <h1 class="orange">MY PROJECTS</h1>
-    <h2>CLICK ON THE PROJECT TO VIEW</h2>
+    <h2>CLICK ON PROJECT IMAGE FOR MORE</h2>
 </header>
 <div id="projects">
     <div class="projects-row">
@@ -231,7 +231,7 @@ const noteClick = (x, bool) => {
         <div class="project-click">
             <div class="project-description" id="note-des">
             Note taker that can be used to write and save notes. This application uses an Express.js back end 
-            and saves and retrieve note data from a JSON file.
+            and saves and retrieves note data from a JSON file.
             </div>
             <div class="project-buttons">
                 <a href="https://github.com/cartaud/expressNoteTaker" class="gitLink" target="_blank">GitHub</a>
@@ -279,7 +279,7 @@ const etchClick = (x, bool) => {
         x.innerHTML = `
         <div class="project-click">
             <div class="project-description" id="etch-des">
-            Draw whatever you want using a custom color pallet or go crazy with rainbow mode.
+            Draw whatever you want using the custom color pallet or go crazy with rainbow mode.
             </div>
             <div class="project-buttons">
                 <a href="https://github.com/cartaud/etch-a-sketch" class="gitLink" target="_blank">GitHub</a>
