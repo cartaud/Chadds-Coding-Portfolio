@@ -146,7 +146,7 @@ const resumeTemplate = `
     <h2>CLICK THE IMAGE TO DOWNLOAD PDF</h2>
 </header>
 <div id='resume'>
-    <a href="https://drive.google.com/file/d/1Udy_tTqkliDoq768v7BR0G15tw3QaHBA/view?usp=sharing" target="_blank">
+    <a href="https://drive.google.com/file/d/1DFxCHSbkLI_6MChXdYyocgvT9ESyobuw/view?usp=sharing" target="_blank">
         <img src="./assets/images/resumePreview.png" alt="Resume">
     </a>
 </div>
@@ -206,7 +206,8 @@ const portfolIOClick = (x, bool) => {
         x.innerHTML = `
         <div class="project-click">
             <div class="project-description" id="io-des">
-            Application that allows a user to create modernized and responsive portfolio templates.  
+            Application that allows a user to create modernized and responsive portfolio templates. Mobile viewing is 
+            not available yet.  
             </div>
             <div class="project-buttons">
                 <a href="https://github.com/cartaud/Portfol.io" class="gitLink" target="_blank">GitHub</a>
@@ -255,7 +256,7 @@ const ecomClick = (x, bool) => {
         x.innerHTML = `
         <div class="project-click">
             <div class="project-description" id="ecom-des">
-            The back end for an e-commerce site.
+            The back end for an e-commerce site. For a demonstration on how it works, click on the Demo button below.
             </div>
             <div class="project-buttons">
                 <a href="https://github.com/cartaud/E-CommerceBackEnd" class="gitLink" target="_blank">GitHub</a>
@@ -279,7 +280,7 @@ const etchClick = (x, bool) => {
         x.innerHTML = `
         <div class="project-click">
             <div class="project-description" id="etch-des">
-            Draw whatever you want using the custom color pallet or go crazy with rainbow mode.
+            Draw whatever you want using the custom color pallet or go crazy with rainbow mode. Mouse required.
             </div>
             <div class="project-buttons">
                 <a href="https://github.com/cartaud/etch-a-sketch" class="gitLink" target="_blank">GitHub</a>
