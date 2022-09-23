@@ -64,9 +64,9 @@ const aboutTemplate = `
         </p>
         <br><br>
         <p>
-            When I first started learning software development, I was a self learner for 6 months. Once I had a firm grasp of 
-            the basics, I decided to take the next step and sign up for a full stack software development bootcamp through University of California, 
-            San Diego Extension program. My goal for myself is to be working as a software engineer by the end of this year
+            When I first started software development, I was a self learner for 6 months. Once I had a firm grasp of 
+            the basics, I decided to take the next step and enroll in an intensive 24 week full stack software development bootcamp through University of California, 
+            San Diego Extension program. Now that I have completed the bootcamp, my goal for myself is to be working as a software engineer by the end of this year
             where I can use my knowledge in software engineering to contribute to a company's success.
         </p>
     </div>
