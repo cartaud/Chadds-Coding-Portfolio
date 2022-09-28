@@ -81,11 +81,11 @@ const projectTemplate = `
 </header>
 <div id="projects">
     <div class="projects-row">
-        <div class="project-container" onclick="portfolIOClick(this, true)" id="io-container">
-            <img src="./assets/images/portfolIOPreview.png"  alt="Portfolio Generator" class="projectPreview">
+        <div class="project-container" onclick="thoughtClick(this, true)" id="thought-container">
+            <img src="./assets/images/thought.png"  alt="deep thoughts" class="projectPreview">
             <div class="project-title">
-                <h5>Portfol.IO</h5>
-                <h6>MERN</h6>
+                <h5>Deep Thoughts</h5>
+                <h6>AWS</h6>
             </div>
         </div>
         <div class="project-container" onclick="bookClick(this, true)" id="book-container">
@@ -105,11 +105,11 @@ const projectTemplate = `
     </div>
 
     <div class="projects-row">
-        <div class="project-container" onclick="noteClick(this, true)" id="note-container">
-            <img src="./assets/images/noteTaker.png"  alt="Note Taker" class="projectPreview">
+        <div class="project-container" onclick="portfolIOClick(this, true)" id="io-container">
+            <img src="./assets/images/portfolIOPreview.png"  alt="Portfolio Generator" class="projectPreview">
             <div class="project-title">
-                <h5>Note Taker</h5>
-                <h6>Express.JS</h6>
+                <h5>Portfol.IO</h5>
+                <h6>MERN</h6>
             </div>
         </div>
         <div class="project-container" onclick="ecomClick(this, true)" id="ecom-container">
@@ -207,7 +207,7 @@ const portfolIOClick = (x, bool) => {
         <div class="project-click">
             <div class="project-description" id="io-des">
             Application that allows a user to create modernized and responsive portfolio templates. Mobile viewing is 
-            not available yet.  
+            not yet supported.  
             </div>
             <div class="project-buttons">
                 <a href="https://github.com/cartaud/Portfol.io" class="gitLink" target="_blank">GitHub</a>
@@ -226,26 +226,26 @@ const portfolIOClick = (x, bool) => {
     }
 }
 
-const noteClick = (x, bool) => {
+const thoughtClick = (x, bool) => {
     if (bool) {
         x.innerHTML = `
         <div class="project-click">
-            <div class="project-description" id="note-des">
-            Note taker that can be used to write and save notes. This application uses an Express.js back end 
-            and saves and retrieves note data from a JSON file.
+            <div class="project-description" id="thought-des">
+            Application where users can post thoughts and images. This application utilizes tools from Amazon Web Services 
+            such as DynamoDB (database), S3 Bucket (image storage), and EC2 (instance).
             </div>
             <div class="project-buttons">
-                <a href="https://github.com/cartaud/expressNoteTaker" class="gitLink" target="_blank">GitHub</a>
-                <a href="https://sheltered-journey-28187.herokuapp.com/" class="deployedLink" target="_blank">Deployed</a>
+                <a href="https://github.com/cartaud/aws-thought" class="gitLink" target="_blank">GitHub (private)</a>
+                <a href="http://3.15.234.21/" class="deployedLink" target="_blank">Deployed</a>
             </div>
         </div>
         `
     } else {
         x.innerHTML = `
-        <img src="./assets/images/noteTaker.png"  alt="Note Taker" class="projectPreview">
+        <img src="./assets/images/thought.png"  alt="Deep Thoughts" class="projectPreview">
         <div class="project-title">
-            <h5>Note Taker</h5>
-            <h6>Express.JS</h6>
+            <h5>Deep Thoughts</h5>
+            <h6>AWS</h6>
         </div>
         `
     }
@@ -310,8 +310,8 @@ const closeProject = (x) => {
     if (x.srcElement.id === "io-des") {
         portfolIOClick(document.querySelector('#io-container'), false)
     }
-    if (x.srcElement.id === "note-des") {
-        noteClick(document.querySelector('#note-container'), false)
+    if (x.srcElement.id === "thought-des") {
+        thoughtClick(document.querySelector('#thought-container'), false)
     }
     if (x.srcElement.id === "ecom-des") {
         ecomClick(document.querySelector('#ecom-container'), false)
