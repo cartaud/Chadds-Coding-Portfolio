@@ -1,9 +1,37 @@
+const nav = document.querySelector('#directory-container');
+const social = document.querySelector('#social-container');
+
+if (window.innerWidth <= 480) {
+    nav.innerHTML = `
+    <button class="dropbtn">NAVIGATION
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <ul class="dropdown-nav">
+        <li class="orange" id="about-link">ABOUT ME</li>
+        <li id="projects-link">PROJECTS</li>
+        <li id="contact-link">CONTACT</li>
+        <li id="resume-link">RESUME</li>
+    </ul>
+    `
+    social.innerHTML = `
+    <button class="dropbtn">SOCIAL
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-social">
+        <a href="https://www.linkedin.com/in/chadd-artaud/" target="_blank">Linkedin</a>
+        <a href="https://github.com/cartaud" target="_blank">Github</a>
+        <a href="https://twitter.com/ArtaudChadd" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com/chadd.artaud" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/chadd_a33/" target="_blank">Instagram</a>
+    </div>
+    `
+}
+
 const content = document.querySelector('#right-container');
 const about = document.querySelector('#about-link');
 const project = document.querySelector('#projects-link');
 const contact = document.querySelector('#contact-link');
 const resume = document.querySelector('#resume-link');
-
 
 const showAbout = () => {
     window.removeEventListener('click', closeProject)
@@ -53,7 +81,7 @@ const aboutTemplate = `
 </header>
 <div id="bio-container">
     <div id="portrait-container">
-        <img src="./assets/images/profile.png" alt="">
+        <img src="./assets/images/profile.png" alt="self portrait">
     </div>
     <div id="bio">
         <p>

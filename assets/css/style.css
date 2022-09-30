@@ -41,6 +41,8 @@ a {
     width: 25%;
     background-color: #202020;
     padding: 20px 10px;
+    position: fixed;
+    height: 100%;
 }
 
 #left-container header div {
@@ -65,17 +67,23 @@ a {
     font-size: 1.5vw;
 }
 
-#directory-container ul {
+#nav-li {
     display: flex;
     flex-direction: column;
     gap: 8px;
     font-size: 2vw;
 }
 
+#directory-container ul li:hover,
+#social-icons a i:hover {
+    color: #f19b2c;
+}
+
 #right-container {
+    margin-left: 25%;
     width: 75%;
     background-color: #252525;
-    padding: 20px 5px;
+    padding: 18px 10px;
 }
 
 #bio-container {
@@ -87,7 +95,6 @@ a {
 #portrait-container img{
     max-width: 100%;
     max-height:fit-content;
-    
 }
 
 #bio p {
@@ -199,6 +206,7 @@ a {
     max-width: 90%;
     max-height:fit-content;
     margin-top: 20px;
+    margin-left: 5%;
 }
 
 .options-container {
@@ -231,13 +239,13 @@ a {
 
     #left-container {
         width: 100%;
-        height: 150px;
+        height: 75px;
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
-        gap: 10px;
+        justify-content:space-around;
+        
         position: fixed;
-        z-index: 2;
+        z-index: 1;
     }
 
     #left-container header h2{
@@ -248,7 +256,59 @@ a {
         font-size: 3vw;
     }
 
-    #directory-container {
+    #directory-container,
+    #social-container {
+        margin-top: 0;
+        float: left;
+    }
+
+    .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+        margin-top: 4px;
+    }
+
+    #directory-container:hover .dropbtn,
+    #social-container:hover .dropbtn {
+        color: #f19b2c;
+    }
+
+    .dropdown-nav,
+    .dropdown-social {
+        display: none;
+        position: absolute;
+        background-color: #202020;
+        min-width: 60px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+    }
+
+    .dropdown-social a,
+    .dropdown-nav li {
+        float: none;
+        color: white;
+        padding: 6px 8px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        
+    }
+
+    .dropdown-social a:hover,
+    .dropdown-nav li:hover {
+        color: #f19b2c;
+    }
+
+    #directory-container:hover .dropdown-nav,
+    #social-container:hover .dropdown-social {
+        display: block;
+    }
+      
+   /* #directory-container {
         margin: 0 5px;
         width: fit-content;
         height: fit-content;
@@ -273,10 +333,13 @@ a {
     .fa-brands {
         font-size: 3vw;
     }
+*/
+
 
     #right-container {
         width: 100%;
-        margin-top: 150px;
+        margin-top: 75px;
+        margin-left: 0;
     }
 
     #right-container header {
@@ -329,7 +392,7 @@ a {
         bottom: 20%;
         padding: 1% 2%;
         justify-content: center;
-        z-index: 1;
+        z-index: 0;
     }
     .project-title h5,
     .project-title h6 {
@@ -354,7 +417,7 @@ a {
         align-items: center;
     }
 
-    #resume a{
+    #resume {
         display: flex;
         justify-content: center;
     }
